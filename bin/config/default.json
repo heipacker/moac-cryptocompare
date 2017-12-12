@@ -1,0 +1,16 @@
+{
+  "common": {
+    "debug": false
+  },
+  "redis": {
+    "host": "127.0.0.1",
+    "port": 6379
+  },
+  "session": {
+    "secret": "ssfd,,,,hakkdfdflllwe9k"
+  },
+  "schedule": {
+    //十分钟一次
+    "testJobCron": "*/10 * * * *"
+  }
+}

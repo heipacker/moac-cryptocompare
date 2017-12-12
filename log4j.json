@@ -1,0 +1,15 @@
+{
+  "appenders": [
+    {
+      "type": "console"
+    },
+    {
+      "type": "dateFile",
+      "level": "INFO",
+      "filename": "deep-well-server.log",
+      "pattern": "-yyyy-MM-dd",
+      "alwaysIncludePattern": true
+    }
+  ],
+  "replaceConsole": true
+}

@@ -1,0 +1,89 @@
+{
+  "dbConfig": {
+    "host": "127.0.0.1",
+    "port": 5432,
+    "user": "postgres",
+    "database": "skywell",
+    "password": "postgres",
+    "max": 33,
+    "idleTimeoutMillis": 30000
+  },
+  "redis": {
+    "host": "127.0.0.1",
+    "port": 6379
+  },
+  "objStore": {
+    "url": "http://pai.skyfromwell.com/v1/obj-store",
+    "root": "/home/skywell/routers"
+  },
+  "auction": {
+    "tongCode": "0000000F",
+    "tongSecret": "c3cbb6e5fc09e53af3bb03cf3f1d391e2d099a07",
+    "tongWalletAddress": "jsniaJzWFC3dpjgsGTZosnMZrcJyUk3V6y",
+    "tongWalletSecret": "snj3H96kVG74F5yCZ98Yom36VZVkA",
+    "issuer": "jBciDE8Q3uJjf111VeiUNM775AMKHEbBLS",//发行方
+    "coinsAccount": "jG4oHTKopzG1JXjCRd23HdXvXBAAvCSSjr",//提现账号
+    "coinsSecret": "sn5bGPAExY7H4xaDn2PJzoUbzpcbz",//提现密钥
+    "coinsCurrency": "8200000005000020170006000000000020000001",//用户通编码
+    "auctionTransType": "auction",
+    "transType": "do_auction",
+    "computeScriptDirectory": "compute",
+    "computeScriptTransType": "auction_script",
+    "bidTransType": "auction_bid",
+    "depositTransType": "auction_deposit",
+    "goodsPassword": "20161206",
+    "goodsAssistAccountName": "goods_assist",
+    "goodsAssistAccountPassword": "20161206",
+    "goodsAssistAccountPhone": "18600653783",
+    "goodsAssistAccountEmail": "heipackermail@gmail.com",
+    "goodsAuctionInitAmount": "0.01",
+    "attendAuctionAmount": "0.01",
+    "scheduleJobCron": "*/1 * * * *",
+    "jingtumStatusJobCron": "*/10 * * * *",
+    "debug": false,
+    "lockedExpires": 600
+  },
+  "login": {
+    "homePage": "http://pai.skyfromwell.com",
+    "transType": "auction",
+    "thridPartyDefaultPassword": "1234",
+    "jingtumApiUrl": "http://120.24.221.115",
+    "clientId": "f1450890-c2f8-11e6-8734-6d09def7",
+    "clientSecret": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjbGllbnRJZCI6ImYxNDUwODkwLWMyZjgtMTFlNi04NzM0LTZkMDlkZWY3Zjk4OSIsImNvbXBhbnlOYW1lIjoi57yW6L6R6YOo5byA5Y-R5YWs5Y-4IiwicmVhbE5hbWUiOiLku5jnm7wiLCJwaG9uZSI6IjE4NjAwNjUzNzgzIiwibWFpbCI6ImhlaXBhY2tlcm1haWxAZ21haWwuY29tIiw",
+    "grantType": "authorization_code",
+    "weixinApiUrl": "https://api.weixin.qq.com",
+    "weixinAppId": "wx2a5f1310f30260ec",
+    "weixinAppSecret": "54d032dd94ca8024da70db0679812296",
+    "weixinGrantType": "authorization_code"
+  },
+  "session": {
+    "secret": "ssfd,,,,hakkdfdflllwe9k"
+  },
+  "push": {
+    "url": "http://routers.skyfromwell.com/gopush/1/"
+  },
+  "neo4j": {
+    "url": "bolt://localhost:7687",
+    "username": "neo4j",
+    "password": "neo4j",
+    "knownHosts": "/home/skywell/.neo4j/knownHosts"
+  },
+  "jingtum": {
+    "api" :{
+      "url": "https://api.jingtum.com",
+      "version": "/v1",
+      "wss_url": "wss://api.jingtum.com:5443",
+      "gift_account": "j4xWrvN4pwdejhabYrXzE8Z7cfEZXUrB36",//激活账号与充值账号
+      "gift_secret": "spAYByL4Ed64SJDspUDXy8bMLrpCm",//激活账号与充值账号密钥
+      "gift_amount": "30",
+
+      "fgate_account": "jBciDE8Q3uJjf111VeiUNM775AMKHEbBLS",//银关账号
+      "market_account": "j33uE7tz2xFkNbfCjn2SaCmwkwZcqf7gQo",
+      "wd_account": "j3n6art3Qfyk3eLyngPXFiFUVUhxyonanD",//提现账号
+      "wd_secret": "snBHnRwzEnQLNpwCiKcegZFt2npY3"//提现密钥
+    },
+    "wx_info": {
+      "notify_url": "http://m.jingtum.com/app/deposit/"
+    }
+  }
+}
