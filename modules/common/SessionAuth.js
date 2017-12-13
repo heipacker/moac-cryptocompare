@@ -1,3 +1,6 @@
+/**
+ * Created by heipacker on 17-12-13.
+ */
 exports.authorize = function (req, res, next) {
     if (!req.session.user) {
         console.error(req.ip, req.method, req.originalUrl);

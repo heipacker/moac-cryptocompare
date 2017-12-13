@@ -1,3 +1,6 @@
+/**
+ * Created by heipacker on 17-12-13.
+ */
 var RedisClustr = require('redis-clustr');
 var redis = require('redis');
 var config = require('config');

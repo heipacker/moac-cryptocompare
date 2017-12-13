@@ -4,8 +4,8 @@
 var globalConfig = require('config');
 
 var config = {
-    scheduleWithdrawalsEnabled: false,
-    withdrawalsJobCron: globalConfig.get("schedule.withdrawalsJobCron")
+    scheduleTestEnabled: false,
+    testJobCron: globalConfig.get("schedule.testJobCron")
 };
 
 module.exports = config;

@@ -1,3 +1,6 @@
+/**
+ * Created by heipacker on 17-12-13.
+ */
 var crypto = require('crypto');
 
 function WXBizDataCrypt(appId, sessionKey) {

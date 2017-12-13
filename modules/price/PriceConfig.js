@@ -1,10 +1,8 @@
 /**
- * Created by weijia on 16-11-20.
+ * Created by heipacker on 17-12-13.
  */
 var globalConfig = require('config');
 
-var config = {
-    urlPrefix: globalConfig.get("gid.url")
-};
+var config = {};
 
 module.exports = config;

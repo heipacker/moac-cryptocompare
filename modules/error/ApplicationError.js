@@ -1,3 +1,6 @@
+/**
+ * Created by heipacker on 17-12-13.
+ */
 const AbstractError = require('./AbstractError');
 const util = require('util');
 

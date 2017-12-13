@@ -19,7 +19,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var xmlParser = require('express-xml-bodyparser');
 var expressSession = require('express-session');
-var RedisClient = require('./modules/common/RedisClient');
+// var RedisClient = require('./modules/common/RedisClient');
 var RedisStore = require('connect-redis')(expressSession);
 var timeMonitor = require('./modules/common/TimeMointor');
 
@@ -40,13 +40,13 @@ var config = {
     session_secret: globalConfig.get("session.secret")
 };
 app.use(expressSession({
-    store: new RedisStore({
-        prefix: "auction_",
-        client: RedisClient,
-        host: globalConfig.get("redis.host"),
-        port: globalConfig.get("redis.port"),
-        logErrors: true
-    }),
+    // store: new RedisStore({
+    //     prefix: "auction_",
+    //     client: RedisClient,
+    //     host: globalConfig.get("redis.host"),
+    //     port: globalConfig.get("redis.port"),
+    //     logErrors: true
+    // }),
     secret: config.session_secret,
     resave: false,
     saveUninitialized: false,

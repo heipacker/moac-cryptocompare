@@ -1,3 +1,6 @@
+/**
+ * Created by heipacker on 17-12-13.
+ */
 module.exports = function () {
     return function (req, res, next) {
         req._startTime = Date.now();

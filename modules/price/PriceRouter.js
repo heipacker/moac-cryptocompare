@@ -1,3 +1,6 @@
+/**
+ * Created by heipacker on 17-12-13.
+ */
 var PriceRequest = require("./PriceRequest");
 
 module.exports = function (app) {
@@ -5,8 +8,8 @@ module.exports = function (app) {
     /**
      *
      */
-    app.get('/v1/gid', function (req, res, next) {
-        PriceRequest.getIdObj(function (err, result) {
+    app.get('/data/price', function (req, res, next) {
+        PriceRequest.getPrice(req, function (err, result) {
             if (err) {
                 return next(err);
             }
