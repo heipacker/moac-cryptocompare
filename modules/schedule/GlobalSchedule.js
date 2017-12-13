@@ -3,21 +3,21 @@
  */
 var NodeSchedule = require('node-schedule');
 
-var TestScheduleConfig = require('./TestScheduleConfig');
-var TestSchedule = require('./TestSchedule');
+var CoinbeneScheduleConfig = require('./CoinbeneScheduleConfig');
+var CoinbeneSchedule = require('./CoinbeneSchedule');
 
 var GlobalSchedule = {
     /**
      * 初始化
      */
     init: function () {
-        if (TestScheduleConfig.scheduleTestEnabled) {
-            var testJobCron = TestScheduleConfig.testJobCron;
-            var testScheduleFunction = TestSchedule.scheduleFunction();
+        if (CoinbeneScheduleConfig.scheduleTestEnabled) {
+            var testJobCron = CoinbeneScheduleConfig.coinbeneJobCron;
+            var testScheduleFunction = CoinbeneSchedule.scheduleFunction();
             var testJob = NodeSchedule.scheduleJob(testJobCron, testScheduleFunction);
-            console.log("schedule test enabled.");
+            console.log("schedule coinbene enabled.");
         } else {
-            console.log("schedule test disabled.");
+            console.log("schedule coinbene disabled.");
         }
 
     }

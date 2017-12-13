@@ -9,6 +9,10 @@
   "session": {
     "secret": "ssfd,,,,hakkdfdflllwe9k"
   },
+  "coinbene": {
+    "id": "171213213814622041844",
+    "key": "2d0b50474269432b8cc3826c3d887345"
+  },
   "schedule": {
     //十分钟一次
     "testJobCron": "*/10 * * * *"

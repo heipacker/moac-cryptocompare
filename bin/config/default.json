@@ -9,8 +9,12 @@
   "session": {
     "secret": "ssfd,,,,hakkdfdflllwe9k"
   },
+  "coinbene": {
+    "coinbeneApikey": "171213213814622041844",
+    "coinbeneApisecret": "2d0b50474269432b8cc3826c3d887345"
+  },
   "schedule": {
-    //十分钟一次
-    "testJobCron": "*/10 * * * *"
+    //二分钟一次
+    "coinbeneJobCron": "*/2 * * * *"
   }
 }
