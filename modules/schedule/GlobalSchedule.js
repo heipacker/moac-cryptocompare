@@ -12,9 +12,10 @@ var GlobalSchedule = {
      */
     init: function () {
         if (CoinbeneScheduleConfig.scheduleTestEnabled) {
-            var testJobCron = CoinbeneScheduleConfig.coinbeneJobCron;
-            var testScheduleFunction = CoinbeneSchedule.scheduleFunction();
-            var testJob = NodeSchedule.scheduleJob(testJobCron, testScheduleFunction);
+            var coinbeneJobCron = CoinbeneScheduleConfig.coinbeneJobCron;
+            var coinbeneScheduleFunction = CoinbeneSchedule.scheduleFunction();
+            coinbeneScheduleFunction();
+            var testJob = NodeSchedule.scheduleJob(coinbeneJobCron, coinbeneScheduleFunction);
             console.log("schedule coinbene enabled.");
         } else {
             console.log("schedule coinbene disabled.");
