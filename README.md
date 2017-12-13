@@ -10,5 +10,5 @@
 * install & run
  - option: npm install nrm -g 
  - npm install
- - cd bin && node www.js
- - nohup `export NODE_ENV=develop && node www.js` &
+ - cd bin
+ - sh ./start.sh
