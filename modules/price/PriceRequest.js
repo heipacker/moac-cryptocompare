@@ -1,6 +1,7 @@
 /**
  * Created by heipacker on 17-03-22.
  */
+var ApplicationError = require('../error/ApplicationError');
 var PriceConfig = require('./PriceConfig');
 var Global = require('../global/Global');
 
@@ -15,10 +16,7 @@ var priceRequest = {
     getPrice: function (req, callback) {
         var params = req.query;
         if (!params || !params.fsym || !params.tsyms) {
-            return res.send({
-                code: 1,
-                msg: 'missing parameters'
-            });
+            return callback(new ApplicationError("params invalid"))
         }
         var fsym = params.fsym;
         var tsyms = params.tsyms;
