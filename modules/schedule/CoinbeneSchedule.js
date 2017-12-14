@@ -9,6 +9,8 @@ var Global = require('../global/Global');
  */
 var Schedule = {
 
+    exchange: "coinbene",
+
     /**
      * 初始化
      */
@@ -18,13 +20,13 @@ var Schedule = {
 
     scheduleFunction: function () {
         return function () {
-            console.log("beginning get price from coinbene");
+            console.log("beginning get price from " + Schedule.exchange);
             Schedule.getPrice(function (err, result) {
                 if (err) {
                     console.log("get price error", err);
                     return
                 }
-                var priceList = Global.priceList;
+                var priceList = Global.exchangePriceListMap[Schedule.exchange];
                 for (var i = 0; i < priceList.length; ++i) {
                     var priceItem = priceList[i];
                     if (priceItem.tsym == "USD") {

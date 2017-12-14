@@ -21,9 +21,9 @@ var priceRequest = {
         var fsym = params.fsym;
         var tsyms = params.tsyms;
         var extraParams = params.extraParams;
-
-        console.log("application: " + extraParams + ", fsym=" + fsym + ", tsyms=" + tsyms);
-        var priceList = Global.priceList;
+        var exchange = params.e ? params.e : "coinbene";
+        console.log("application: " + extraParams + ", e=" + exchange + ", fsym=" + fsym + ", tsyms=" + tsyms);
+        var priceList = Global.exchangePriceListMap[exchange];
         var tsymList = tsyms.split(",");
         var result = {};
         for (var i = 0; i < tsymList.length; ++i) {

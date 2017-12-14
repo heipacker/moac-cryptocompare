@@ -9,28 +9,30 @@ var Global = {
 
     },
 
-    priceList: [
-        {
-            tsym: "BTC",
-            price: 0.01
-        },
-        {
-            tsym: "USD",
-            price: 10
-        },
-        {
-            tsym: "EUR",
-            price: 9.8
-        },
-        {
-            tsym: "GBP",
-            price: 10
-        },
-        {
-            tsym: "BRL",
-            price: 100
-        }
-    ]
+    exchangePriceListMap: {
+        "coinbene": [
+            {
+                tsym: "BTC",
+                price: 0.01
+            },
+            {
+                tsym: "USD",
+                price: 10
+            },
+            {
+                tsym: "EUR",
+                price: 9.8
+            },
+            {
+                tsym: "GBP",
+                price: 10
+            },
+            {
+                tsym: "BRL",
+                price: 100
+            }
+        ]
+    }
 };
 
 module.exports = Global;
